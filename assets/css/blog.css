@@ -3,7 +3,9 @@
 	padding: 0;
 	box-sizing: border-box;
 }
-
+body{
+	background: linear-gradient(135deg, #cedbe9 0%,#aac5de 10%,#4bb8f0 19%,#4bb8f0 19%,#6199c7 32%,#3a84c3 44%,#6199c7 59%,#419ad6 70%,#419ad6 70%,#3a8bc2 84%,#26558b 100%);
+}
 .grid{
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);

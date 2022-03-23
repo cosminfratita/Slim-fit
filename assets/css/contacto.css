@@ -130,6 +130,7 @@ footer{
 	background-color: #0E94AB;
 	text-align: center;
 	margin-top: 5% !important;
+	position: fixed;
 }
 .textos-footer{
 	grid-column: 1/-1;
