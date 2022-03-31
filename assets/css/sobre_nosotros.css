@@ -20,8 +20,12 @@ body{
 .weight-600{
 	font-weight: 600;
 }
+h1{
+	font-size: 40px;
+}
 .parrafo{
 	margin-bottom: 20px;
+	font-size: 19px;
 }
 .header{
 	height: 500px;
@@ -108,9 +112,12 @@ footer{
 		text-align: center;
 	}
 	.menu_links{
+		background: #0E94AB;
 		display: grid;
 		grid-template-columns: 1fr;
 		grid-column: 1/-1;
+		position: relative;
+		z-index: 100;
 	}
 	.header-2 label{
 		display: block;
@@ -128,6 +135,10 @@ footer{
 		position:  absolute;
 		width: 70;
 		margin-left: -100%;
+	}
+	.menu li a{
+		background: #0E94AB;    /*   se ha añadido para responsive
+		 */
 	}
 
 	#btn-menu:checked ~ .menu {
@@ -148,18 +159,21 @@ footer{
 	.menu{
 		display: flex;
 		text-align: center;
-
-	}
-	.grid{
-		grid-gap: 20px;
 	}
 	.img-hero, .texto-hero{
 		grid-column: 1/-1;
 		justify-content: center;
 		text-align: center;
 	}
+	.texto-hero{
+		margin-top: 20px;
+	}
+	h1{
+		font-size: 30px;
+	}
 	.parrafo{
-		text-align: center;
+		text-align: left;
+		font-size: 15px;
 	}
 	.cta{
 		justify-content: center;

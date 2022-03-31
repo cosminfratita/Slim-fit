@@ -44,7 +44,6 @@
 	display: none;
 }
 
-
 /*-----------------BODY----------------------*/
 
 .content{
@@ -129,8 +128,7 @@ footer{
 	color: #fff;
 	background-color: #0E94AB;
 	text-align: center;
-	margin-top: 5% !important;
-	position: fixed;
+	margin-top: 5% !important;   /* se ha quitado el position:fixed  */
 }
 .textos-footer{
 	grid-column: 1/-1;
@@ -145,6 +143,9 @@ footer{
 	.contact-wrapper{
 		display: inline-block;
 	}
+	.contact-info{
+	display: none;
+}
 	.header-2{
 		height: auto;
 		display: block;
