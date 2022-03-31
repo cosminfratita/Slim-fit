@@ -79,11 +79,14 @@ body{
 .header-2 label{
 	display: none;
 }
+
 /*--------- BODY ---------------- */
 
 .service-2{
+	grid-column: 1/7;
 	height: auto;
 	margin-top: 50px;
+	
 }
 .items-2{
 	grid-column: 1/-1;
@@ -95,14 +98,13 @@ body{
 	flex-wrap: wrap;
 	grid-gap: 20px;
 }
-h3{
-	text-align: center;
-}
 .item-2{
 	width: 100%;
 	overflow: hidden;
-	padding: 20px 10px;
-	text-align: left;
+	padding: 20px 10px;   
+}
+h3{
+	text-align: center;
 }
 /*----- Footer------ */
 
@@ -113,6 +115,7 @@ footer{
 	padding: 30px 0;
 	margin-top: 30px;
 	margin-top: 5% !important;
+
 }
 .textos-footer{
 	grid-column: 1/-1;
@@ -155,14 +158,9 @@ footer{
 	#btn-menu:checked ~ .menu {
 		margin: 0;
 	}
-	.items-2{
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
-		flex-wrap: wrap;
-		grid-template-rows: repeat(3, 1fr);
-	}
 	.item-2{
 		width: 100%;
+		grid-column: 1/-1;    
 	}
 
  }
