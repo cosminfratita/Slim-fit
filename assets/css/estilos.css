@@ -83,7 +83,6 @@
 .menu{
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
-
 	width: 100%;
 	color: #fff;
 	height: 60px;
@@ -146,7 +145,7 @@ footer{
 		display: flex;
 		text-align: center;
 
-	}
+	} 
 	.grid{
 		grid-gap: 20px;
 	}
@@ -196,8 +195,7 @@ footer{
 		background: rgba(0, 0, 0, 0.3);
 	}
 	.header label img{
-		display: block;
-		margin: auto;
+		
 
 	}
 	.menu{
@@ -208,7 +206,7 @@ footer{
 
 	#btn-menu:checked ~ .menu {
 		margin: 0;
-	}
+	} 
 	
 
 

@@ -79,12 +79,6 @@ body{
 .header-2 label{
 	display: none;
 }
-
-
-
-
-
-
 /*--------- BODY ---------------- */
 
 .service-2{
@@ -101,19 +95,15 @@ body{
 	flex-wrap: wrap;
 	grid-gap: 20px;
 }
+h3{
+	text-align: center;
+}
 .item-2{
 	width: 100%;
 	overflow: hidden;
-	height: 300px;
 	padding: 20px 10px;
-	text-align: center;
+	text-align: left;
 }
-
-
-
-
-
-
 /*----- Footer------ */
 
 footer{
@@ -123,7 +113,6 @@ footer{
 	padding: 30px 0;
 	margin-top: 30px;
 	margin-top: 5% !important;
-
 }
 .textos-footer{
 	grid-column: 1/-1;
