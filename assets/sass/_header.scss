@@ -1,17 +1,35 @@
+html{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
 .menu{
-	display: grid;
+	display: grid; 
 	grid-template-columns: repeat(12, 1fr);
-    height: 60px;
-	width: 100%;
-	color: #fff;
-	background: #0E94AB;
+	align-items: center;
+	background-color: #0E94AB;
+	height: 60px;
+    width: 100%;
+    #btn-menu{
+        display: none; 
+    }
+    .checkbtn{
+        grid-column: 12/13; 
+        font-size: 30px;
+        color: #fff;
+        text-align: center;
+        margin-top: 15px;
+        cursor: pointer;
+        display: none;
+    }
+    .enlace{
+        position: absolute;
+        margin-left: 15px;
+    }
     .menu_links{
-        list-style-type: none;
+        list-style-type: none; 
         padding: 0;
         background: #0E94AB;
-        width: 100%;
-        height: 40px;
-        margin: unset;
         grid-column: 5/13;
         li{
             display: inline-block;
@@ -19,19 +37,71 @@
             a{
                 color: #fff;
                 text-decoration: none;
-                display: block;
                 padding: 20px;
+                border-radius: 3px;
                 &:hover{
+                    background: rgba(0, 0, 0, 0.3);
+                }
+                &:active{
                     background: rgba(0, 0, 0, 0.3);
                 }
             }
             
         }
     }
+    .logo{
+        height: 47px;
+    }
 }
-#btn-menu{
-	display: none;
+
+/*----------------------Diseño responsive --------------*/
+@media (max-width: 952px){
+    .enlace{
+        padding-left: 20px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
 }
-header label{
-	display: none;
+
+@media screen and (max-width:800px){
+
+
+	
+.menu{
+    text-align: center;
+    .checkbtn{
+        display: block; 
+        margin-top: 15px;
+    }
+    #btn-menu:checked ~ .menu_links {
+        margin-left: 0;
+    }
+    .menu_links{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column: 1/-1;
+        width: 100%;
+        background: #0E94AB;
+        top: 52px;
+        margin-left: -100%;
+        position: absolute;
+        text-align: center;
+        transition: all .5s;
+        li a{
+            display: block;
+        }
+    }           
+            
+}
+   
+
+}
+
+
+@media screen and (max-width:500px){
+.header-2 label img{
+	display: block;
+	margin: auto;
+    }
 }

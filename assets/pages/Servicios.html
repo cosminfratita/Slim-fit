@@ -5,13 +5,18 @@
 	<meta name="viewport" content="width=, initial-scale=1.0">
 	<title>Document</title>
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 	<link rel="stylesheet" href="../css/service.css">
 </head>
 <body>
 	<header class="header-2">
-		<input type="checkbox" id="btn-menu">
-		<label for="btn-menu"><img src="../img/menu.png" alt=""></label>
 		<nav class="menu">
+			<input type="checkbox" id="btn-menu">
+			<label for="btn-menu" class="checkbtn"><img src="../img/menu.png" alt=""></label>
+			</label>
+	        <a href="../../Index.html" class="enlace">
+	            <img src="../img/logo.png" alt="" class="logo">
+	        </a>
 			<ul class="menu_links">
 				<li><a href="../../Index.html">Inicio</a></li>
 				<li><a href="./Servicios.html">Servicios</a></li>
@@ -22,61 +27,55 @@
 		</nav>
 	</header>
 	 <main>
-	 	<section class="service-2">
-	 		<div class="grid">
-	 			<div class="items-2">
-	 			<div class="item-2" data-aos="zoom-in-down">
-					<h3 class="titulo-service">PERSONAL TRAINERS</h3>  <br>
-					<p>Tienes un objetivo deportivo en mente y necesitas ayuda para alcanzarlo? Contacta con uno de nuestros entrenadores personales
-						 en tu gym. Utiliza la barra de búsqueda que tienes arriba para descubrir todos los perfiles y entrenadores disponibles, 
-						 y así encontrar tu mejor opción basada en tus preferencias y objetivos. Cada uno tiene una especialidad y un método de 
-						 trabajo, y todos son entrenadores certificados.</p>
-				</div>
-				<div class="item-2" data-aos="zoom-in-down">
-					<h3 class="titulo-service">FISIOTERAPEUTAS</h3> <br>
-					<p>¿Sientes dolor o molestias, o te estás recuperando de una lesión? Nos encantaría poder ofrecerte los servicios de un
-						 fisioterapeuta en tu gym, que trabaja de manera externa para Basic-Fit y que puede ayudarte. No dudes en contactarnos 
-						 para ponerte en manos de los mejores profesionales del sector que te brindarán la mejor solución a tu molestia.</p>
-				</div>
-				<div class="item-2"data-aos="zoom-in-down">
-					<h3 class="titulo-service">PRODUCTOS Y ACCESORIOS</h3> <br>
-					<p>Un deportista necesita buen material para entrenar, y una buen suplemento alimenticio antes, durante y después del entrenamiento.
-						 Es por ello por lo que Basic-Fit, en base a esta necesidad, pone a tu disposición en las máquinas de vending del gym diferentes 
-						 productos y accesorios. Desde cuerdas para saltar, hasta bandas elásticas o incluso candados, para cuando se te olvide en casa. 
-						 Además, en estas máquinas puedes encontrar productos de nutrición deportiva de uno de nuestros partners, para que puedas 
-						 alcanzar tus objetivos.</p>
-				</div>
-				<div class="item-2" data-aos="zoom-out-up">
-					<h3 class="titulo-service">SOPORTE FITNESS</h3> <br>
-					<p>No importa tu nivel o experiencia, siempre es bueno tener la opción de pedir ayuda. Sobre todo si eres principiante y no
-						 sabes cómo o por dónde empezar. O si eres un deportista amateur que retoma el entrenamiento tras una lesión. Incluso si eres
-						  un atleta asiduo que busca nuevos challenges.</p>
-				</div>
-				<div class="item-2" data-aos="zoom-out-up">
-					<h3 class="titulo-service">NUTRICIÓN</h3> <br>
-					<p>Los ingredientes fundamentales de un estilo de vida saludable son el deporte y la alimentación. Es por eso por lo que ahora
-						 también compartimos recetas riquísimas y sanísimas en redes sociales, a través de la aplicación y por correo electrónico. 
-						 En nuestro canal de YouTube, por ejemplo, encontrarás muchísimas más comidas y otras tantas recetas.</p>
-				</div>
-				<div class="item-2" data-aos="zoom-out-up">
-					<h3 class="titulo-service">¡NUEVO! <br>¡PERSONAL ONLINE COACH!</h3> <br>
-					<p>Con Personal Online Coach contarás con la ayuda de un entrenador personal certificado a través de la app móvil de Basic-Fit.
-						 Si te suscribes recibirás un programa de entrenamiento a medida de 12 semanas de duración. Además, también recibirás consejos
-						  sobre nutrición y estilo de vida. De este modo, te resultará aún más fácil y podrás lograr tus objetivos!</p>
+	 	<div class="container">
+	 			<div class="row align-items-center">
+		 			<div class="card col-lg-4 col-md-6 style= width: 200px;">
+					  <img src="../img/cards/1.jpg" class="card-img-top" alt="...">
+					  <div class="card-body">
+					    <p class="card-text"> <h4>PRODUCTOS</h4>
+					  </div>
+					</div>
+					<div class="card col-lg-4 col-md-6 style= width: 200px;">
+					  <img src="../img/cards/2.jpg" class="card-img-top" alt="...">
+					  <div class="card-body">
+					    <p class="card-text"> <h4>FISIOTERAPEUTAS</h4> 
+					  </div>
+					</div>
+					<div class="card col-lg-4 col-md-6 style= width: 200px;">
+					  <img src="../img/cards/3.jpg" class="card-img-top" alt="...">
+					  <div class="card-body">
+					    <p class="card-text"> <h4>PERSONAL TRAINERS</h4> 
+					  </div>
+					</div>
+					<div class="card col-lg-4 col-md-6 style= width: 200px;">
+					  <img src="../img/cards/4.jpg" class="card-img-top" alt="...">
+					  <div class="card-body">
+					    <p class="card-text"> <h4>SOPORTE FITNESS</h4> 
+					  </div>
+					</div>
+					<div class="card col-lg-4 col-md-6 style= width: 200px;">
+					  <img src="../img/cards/5.jpg" class="card-img-top" alt="...">
+					  <div class="card-body">
+					    <p class="card-text"> <h4>NUTRICIÓN</h4>
+					  </div>
+					</div>
+					<div class="card col-lg-4 col-md-6 style= width: 200px;">
+					  <img src="../img/cards/6.jpg" class="card-img-top" alt="...">
+					  <div class="card-body">
+					    <p class="card-text"> <h4>ONLINE COACH</h4> 
+					     </p>
+					  </div>
+					</div>
 	 			</div>
 	 		</div>
-	 	</section>
-	 </main>
-	 <footer>
+	 </main> 
+</body>
+		<footer>
 	 	<div class="grid">
 	 		<div class="textos-footer">
 	 			<h2 class="subtitulo">Todos los derechos reservados &copy; 2022</h2>
 	 		</div>
 	 	</div>
+	 	 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 	 </footer>
-	 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-	 <script>
-		AOS.init();
-	  </script>
-</body>
 </html>
