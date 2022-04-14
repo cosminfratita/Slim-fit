@@ -261,7 +261,8 @@ footer{
 			display: block;
 			background: #0E94AB;
 			img{
-				margin: auto;
+				
+                margin-right: 20px;
 				&:hover{
 					background: rgba(0, 0, 0, 0.3);
 				}

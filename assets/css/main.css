@@ -188,7 +188,7 @@ footer {
       display: block;
       background: #0E94AB; }
       .header label img {
-        margin: auto; }
+        margin-right: 20px; }
         .header label img:hover {
           background: rgba(0, 0, 0, 0.3); }
   .menu {
