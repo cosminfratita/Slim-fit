@@ -99,7 +99,10 @@ footer {
   margin-top: 20px;
   display: flex;
   align-items: flex-end;
-  height: 60px; }
+  height: 60px;
+  position: relative;
+  bottom: 0;
+  width: 100%; }
   footer .grid {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -114,6 +117,19 @@ footer {
       grid-column: 1/-1; }
       footer .grid .textos-footer h2 {
         font-size: 24px !important; }
+
+footer-contact {
+  background: #0E94AB;
+  color: #fff;
+  text-align: center;
+  height: 60px;
+  position: fixed;
+  width: 100%;
+  bottom: 0; }
+  footer-contact .textos-footer {
+    grid-column: 1/-1; }
+    footer-contact .textos-footer h2 {
+      font-size: 24px !important; }
 
 /*---------INDEX-----------*/
 .grid {
@@ -139,12 +155,12 @@ footer {
     height: auto; }
     .grid .cta:hover {
       background: rgba(0, 0, 0, 0.3); }
-  .grid .img-hero {
+  .grid .img-hero-i {
     width: 100%;
     grid-column: 8/13;
     height: 500px;
     margin-top: 20px; }
-    .grid .img-hero .img {
+    .grid .img-hero-i .img {
       width: 95%;
       max-width: 470px;
       max-height: 100%;
@@ -269,7 +285,8 @@ h4 {
 
 /*---------SOBRE NOSOTROS-----------*/
 body {
-  background: linear-gradient(to bottom, #f5f6f6 0%, #f5f6f6 13%, #f5f6f6 13%, #f5f6f6 26%, #dddfe3 42%, #dddfe3 50%, #dbdce2 60%, #dbdce2 60%, #dbdce2 71%, #b8bac6 88%, #b8bac6 88%); }
+  background: linear-gradient(to bottom, #f5f6f6 0%, #f5f6f6 13%, #f5f6f6 13%, #f5f6f6 26%, #dddfe3 42%, #dddfe3 50%, #dbdce2 60%, #dbdce2 60%, #dbdce2 71%, #b8bac6 88%, #b8bac6 88%);
+  min-height: 100vh; }
   body .grid {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -291,7 +308,8 @@ body {
       grid-column: 2/6; }
       body .grid .texto-hero .parrafo {
         margin-bottom: 20px;
-        font-size: 19px; }
+        font-size: 19px;
+        margin-top: 20px; }
 
 @media screen and (max-width: 800px) {
   body .grid {
@@ -337,7 +355,7 @@ body {
 
 h3 {
   text-align: center;
-  margin-top: 30px; }
+  margin: 10px; }
 
 .image {
   float: right;
@@ -368,9 +386,11 @@ h3 {
 /*---------CONTACTO-----------*/
 .content {
   max-width: 1000px;
+  min-height: 650px;
   margin-left: auto;
   margin-right: auto;
-  padding: 1.5em; }
+  padding: 1.5em;
+  margin-top: 9vh; }
   .content .contact-wrapper {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -446,7 +466,8 @@ h3 {
   padding: 0; }
 
 .logo {
-  text-align: center; }
+  text-align: center;
+  margin: 10px; }
 
 /*------------RESPONSIVE-----------------*/
 @media (max-width: 800px) {
