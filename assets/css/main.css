@@ -78,7 +78,7 @@
       grid-column: 1/-1;
       width: 100%;
       background: #0E94AB;
-      top: 52px;
+      top: 47px;
       margin-left: -100%;
       position: absolute;
       text-align: center;
@@ -116,9 +116,9 @@ footer {
     footer .grid .textos-footer {
       grid-column: 1/-1; }
       footer .grid .textos-footer h2 {
-        font-size: 24px !important; }
+        font-size: 18px !important; }
 
-footer-contact {
+footer-c {
   background: #0E94AB;
   color: #fff;
   text-align: center;
@@ -126,10 +126,10 @@ footer-contact {
   position: fixed;
   width: 100%;
   bottom: 0; }
-  footer-contact .textos-footer {
+  footer-c .textos-footer {
     grid-column: 1/-1; }
-    footer-contact .textos-footer h2 {
-      font-size: 24px !important; }
+    footer-c .textos-footer h2 {
+      font-size: 18px !important; }
 
 /*---------INDEX-----------*/
 .grid {
@@ -192,7 +192,7 @@ footer-contact {
         box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
         overflow: hidden;
         height: 200px;
-        padding: 20px 10px;
+        padding: 10px;
         text-align: center;
         height: auto; }
 
@@ -242,14 +242,15 @@ footer-contact {
     margin-top: 20px;
     grid-gap: 20px;
     display: block; }
-  .img-hero {
+  .img-hero-i {
     grid-column: 1/-1;
     text-align: center; }
   .texto-hero {
     grid-column: 1/-1;
     text-align: center; }
   .parrafo {
-    text-align: center; }
+    text-align: center;
+    font-family: Open Sans; }
   .cta {
     justify-content: center; }
   .service {
@@ -298,7 +299,7 @@ body {
     overflow: hidden;
     align-items: center; }
     body .grid .img-hero {
-      widows: 100%;
+      width: 100%;
       height: auto;
       grid-column: 6/13; }
       body .grid .img-hero .img {
@@ -321,10 +322,10 @@ body {
     .header-2 label {
       display: block;
       background: #0E94AB; }
-      .header-2 label img {
-        margin: auto; }
-        .header-2 label img:hover {
-          background: rgba(0, 0, 0, 0.3); } }
+  imagen-s {
+    max-width: 90% !important; }
+    imagen-s:hover {
+      background: rgba(0, 0, 0, 0.3); } }
 
 /*---------BLOG-----------*/
 .grid {
@@ -355,7 +356,7 @@ body {
 
 h3 {
   text-align: center;
-  margin: 10px; }
+  margin: 5px; }
 
 .image {
   float: right;
@@ -387,10 +388,8 @@ h3 {
 .content {
   max-width: 1000px;
   min-height: 650px;
-  margin-left: auto;
-  margin-right: auto;
   padding: 1.5em;
-  margin-top: 9vh; }
+  margin: 9vh auto; }
   .content .contact-wrapper {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -437,7 +436,8 @@ h3 {
         border: 0;
         text-transform: uppercase;
         padding: 1em;
-        width: 30%; }
+        width: 30%;
+        cursor: pointer; }
         .content .contact-wrapper .contact-form button:hover {
           background: gray;
           color: #fff;

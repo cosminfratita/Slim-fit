@@ -117,7 +117,7 @@
         grid-column: 1/-1;
         width: 100%;
         background: #0E94AB;
-        top: 52px;
+        top: 47px;
         margin-left: -100%;
         position: absolute;
         text-align: center;
@@ -167,7 +167,7 @@ footer{
         .textos-footer{
             grid-column: 1/-1;
             h2{
-                font-size: 24px !important;
+                font-size: 18px !important;
             }
         }
     
@@ -175,7 +175,7 @@ footer{
     
 }
 
-footer-contact{
+footer-c{
     background: #0E94AB;
     color: #fff;
     text-align: center;
@@ -187,7 +187,7 @@ footer-contact{
         .textos-footer{
             grid-column: 1/-1;
             h2{
-                font-size: 24px !important;
+                font-size: 18px !important;
             }
         }
     
@@ -267,7 +267,7 @@ footer-contact{
                 box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
                 overflow: hidden;
                 height: 200px;
-                padding: 20px 10px;
+                padding: 10px;
                 text-align: center;
                 height: auto;
             }
@@ -341,7 +341,7 @@ footer-contact{
 		grid-gap: 20px;
 		display: block;
 	}
-	.img-hero{
+	.img-hero-i{
 		grid-column: 1/-1;
 		text-align: center;
 	}
@@ -351,6 +351,7 @@ footer-contact{
 	}
 	.parrafo{
 		text-align: center;
+        font-family:Open Sans;
 	}
 	.cta{
 		justify-content: center;
@@ -416,7 +417,7 @@ h4{
             overflow: hidden;
             align-items: center;
             .img-hero{
-                widows: 100%;
+                width: 100%;
                 height: auto;
                 grid-column: 6/13;
                 .img{
@@ -447,14 +448,15 @@ h4{
 		label {
 			display: block;
 			background: #0E94AB;
-			img{
-				margin: auto;
-				&:hover{
-					background: rgba(0, 0, 0, 0.3);
-				}
-			}
-		}
-	} 
+        }
+		
+	}
+    imagen-s{
+        max-width: 90% !important;
+        &:hover{
+            background: rgba(0, 0, 0, 0.3);
+        }
+    } 
 
 }
 
@@ -485,7 +487,7 @@ h4{
 }
 h3{
 	text-align: center;
-    margin: 10px
+    margin: 5px
 }
 .image{
 	float: right;
@@ -525,16 +527,15 @@ h3{
 
 
 
+
  /*---------CONTACTO-----------*/
 
  .content{
 	max-width: 1000px;
     min-height: 650px;
-	margin-left: auto;
-	margin-right: auto;
 	padding: 1.5em;
-    margin-top: 9vh;
-        .contact-wrapper{
+    margin: 9vh auto;
+        .contact-wrapper{ 
             display: grid;
             grid-template-columns: 2fr 1fr;
             border: 1px solid #000;
@@ -561,7 +562,8 @@ h3{
                         border:  none;
                         background: none;
                         border-bottom: 2px solid #000;
-                        outline: none;
+                        outline: none; 
+
                             &hover{
                                 background: gray;
                                 color: #fff;
@@ -590,6 +592,7 @@ h3{
                         text-transform: uppercase;
                         padding: 1em;
                         width: 30%;
+                        cursor: pointer;
                         &:hover{
                             background: gray;
                             color: #fff;
